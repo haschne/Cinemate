@@ -50,11 +50,11 @@ export const MovieDetail = () => {
             </p>
             <p className="my-4">
               <span className="mr-2 font-bold">Budget:</span>
-              <span>{movie.budget}</span>
+              <span>{movie.budget} $</span>
             </p>
             <p className="my-4">
               <span className="mr-2 font-bold">Revenue:</span>
-              <span>{movie.revenue}</span>
+              <span>{movie.revenue} $</span>
             </p>
             <p className="my-4">
               <span className="mr-2 font-bold">Release Date:</span>
@@ -62,7 +62,7 @@ export const MovieDetail = () => {
             </p>
             <p className="my-4">
               <span className="mr-2 font-bold">IMDB Code:</span>
-              <a href={`https://www.imdb.com/title/${movie.imdb_id}`} target="_blank" rel="noreferrer">{movie.imdb_id}</a>
+              <a href={`https://www.imdb.com/title/${movie.imdb_id}`} className="text-blue-300 underline hover:underline-offset-4" target="_blank" rel="noreferrer">{movie.imdb_id}</a>
             </p>
      
         </div>
